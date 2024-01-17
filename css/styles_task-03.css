@@ -8,11 +8,11 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  list-style: none;
 }
 
 .gallery-image {
   width: 250px;
   height: auto;
   border-radius: 20px;
-  list-style: none;
 }
