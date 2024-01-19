@@ -10,16 +10,17 @@ function handleSubmit(event) {
 
   if (email === "" || password === "") {
     alert("Please fill in all the fields!");
-    return;
+  } else {
+    console.log("Email:", `${email}, Password: ${password}`);
   }
 
-  const formData = {};
-  Array.from(form.elements).forEach((element) => {
-    if (element.type !== "submit" && element.type !== "reset") {
-      formData[element.name] = element.value;
-    }
-  });
+//   const formData = {};
+//   Array.from(form.elements).forEach((element) => {
+//     if (element.type !== "submit" && element.type !== "reset") {
+//       formData[element.name] = element.value;
+//     }
+//   });
 
-  console.log("Form Data:", formData);
+//   console.log("Form Data:", formData);
   form.reset();
 }
